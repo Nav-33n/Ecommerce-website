@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categories {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categories label {
+    padding-right: 2rem;
+}
+
+#sixth{
+    padding: 0;
+}
+
+
+.fa-heart {
+    margin-right: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    width: 100dvw;
+    height: 50dvh; 
+    
+}
+
+.highlight img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+.categories-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.categories-container label {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.categories-subcontainer {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(10, 1fr);
+    justify-self: flex-start;
+    align-items: flex-start;
+    overflow-x: auto;
+}
+.product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    margin-right: 2rem;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+.product-container img {
+    object-fit: cover;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.product-container span {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.todays-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.todays-container label {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.deals-container {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(10, 1fr);
+    justify-self: flex-start;
+    align-items: flex-start;
+    overflow-x: auto;
+}
+
+.deals-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    margin-right: 2rem;
+    border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.deals-product img {
+    object-fit: cover;
+    height: inherit;
+    border-radius: 10px;
+}
+#name {
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 10px 0 4px 0;
+}
+
+#price {
+    text-align: start;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    width: 100%;
+    gap: 20px;
+    height: 500px;
+}
+
+.big-container {
+    grid-area: 1 / 1 / 3 / 2;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.small-top-container {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    border-radius: 15px;
+}
+
+.small-bottom-container{
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    border-radius: 15px;
+}
+
+.big-container img{
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.small-top-container img{
+   width: inherit;
+   height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.small-bottom-container img{
+    width: 100%;
+   height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.suggestion-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.suggestion-container label{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.suggest-container{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(10, 1fr);
+    justify-self: flex-start;
+    align-items: flex-start;
+    overflow-x: auto;
+}
+
+.suggestion-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    margin-right: 2rem;
+    border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.suggestion-product img {
+    object-fit: cover;
+    height: inherit;
+    border-radius: 10px;
+}
+
+.recent-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.recent-container label{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.view-container {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(10, 1fr);
+    justify-self: flex-start;
+    align-items: flex-start;
+    overflow-x: auto;
+} 
+
+.view-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    margin-right: 2rem;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.view-product img {
+    object-fit: cover;
+    height: inherit;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    margin: 20px -50px 0 -50px;
+    padding: 20px;
+    flex-direction: column;
+    width: 99dvi;
+    background-color: rebeccapurple;
+}
+
+.footer-label{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.top-container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.about-container, .help-container, .consumer-container, .mail-container, .address-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container label, .help-container label, .consumer-container label, .mail-container label, .address-container label{
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+}
+
+.about-container a, .help-container a, .consumer-container a, .mail-container p, .address-container p {
+    font-size: 0.9rem;
+    color: rgba(127, 255, 212, 0.5);
+}
+
+.about-container a, .help-container a, .consumer-container a{
+    margin-bottom: 3px;
+}
+
+.address-container p {
+    word-break: break-all;
+}
+
+.bottom-container {
+    border-top: 2px solid rgb(236, 236, 236);
+    display: flex;
+    padding-top: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.fa-brands{
+    margin-right: 20px ;
+    width: 30px;
+    height: 30px;
+   color: wheat;
+}
